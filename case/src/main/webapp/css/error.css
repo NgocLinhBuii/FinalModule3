@@ -1,0 +1,40 @@
+/* Tạo kiểu cho toàn bộ container */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffe0b2; /* Màu nền cam nhạt */
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+/* Tạo kiểu cho tiêu đề lỗi */
+.error-title {
+    color: #d32f2f; /* Màu đỏ sáng */
+    font-size: 48px; /* Kích thước chữ lớn */
+    margin-bottom: 20px;
+}
+
+/* Tạo kiểu cho thông báo lỗi */
+.error-message {
+    color: #333; /* Màu chữ đen */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Tạo kiểu cho nút quay lại */
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Màu xanh lá cây tươi sáng */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.btn-back:hover {
+    background-color: #388e3c; /* Màu xanh lá cây đậm hơn khi di chuột */
+}

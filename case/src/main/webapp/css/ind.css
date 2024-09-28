@@ -1,0 +1,47 @@
+/* Tạo kiểu cho toàn bộ container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiếm toàn bộ chiều cao của viewport */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient màu nền đẹp mắt */
+    color: #fff; /* Màu chữ trắng */
+    text-align: center;
+}
+
+/* Tạo kiểu cho tiêu đề */
+.container h1 {
+    font-size: 3rem; /* Kích thước chữ lớn */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tạo kiểu cho liên kết */
+.btn-create {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff; /* Màu xanh dương sáng */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-create:hover {
+    background-color: #0056b3; /* Xanh dương đậm hơn khi di chuột */
+    transform: scale(1.05); /* Tăng kích thước khi di chuột */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .btn-create {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

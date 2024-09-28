@@ -1,0 +1,211 @@
+/* Toàn bộ trang */
+body {
+    font-family: Arial, sans-serif; /* Font chữ chung cho toàn bộ trang */
+    margin: 0; /* Xóa khoảng cách mặc định */
+    padding: 0; /* Xóa khoảng cách mặc định */
+    background: #eaf6ff; /* Nền xanh sáng cho trang */
+}
+
+/* Container chính */
+.container {
+    width: 90%; /* Chiều rộng 90% */
+    max-width: 1200px; /* Chiều rộng tối đa */
+    margin: 20px auto; /* Canh giữa */
+    padding: 20px; /* Khoảng cách bên trong container */
+    background: #ffffff; /* Nền trắng cho container */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ */
+}
+
+/* Liên kết tiêu đề */
+.header-link {
+    display: block; /* Hiển thị dưới dạng khối */
+    font-size: 2rem; /* Kích thước chữ lớn hơn */
+    color: #ff5733; /* Cam sáng */
+    text-decoration: none; /* Bỏ gạch chân */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+    text-align: center; /* Canh giữa */
+    font-weight: bold; /* Chữ đậm */
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Form tìm kiếm */
+.search-form {
+    background-color: #f9f9f9; /* Nền sáng */
+    border: 1px solid #ddd; /* Viền mỏng */
+    border-radius: 5px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong */
+    margin: 20px 0; /* Khoảng cách bên ngoài */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.search-form label {
+    display: block; /* Đặt label ở dòng mới */
+    margin-bottom: 5px; /* Khoảng cách dưới label */
+    font-weight: bold; /* Đậm */
+}
+
+.search-form input,
+.search-form select {
+    width: 100%; /* Chiều rộng đầy đủ */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin-bottom: 15px; /* Khoảng cách dưới input/select */
+    border: 1px solid #ccc; /* Viền mỏng */
+    border-radius: 4px; /* Bo góc */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+.search-form button {
+    background-color: #007bff; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không có viền */
+    padding: 10px 15px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+.search-form button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+
+/* Nút thêm sinh viên mới và các nút khác */
+.btn-create, .btn-submit, .btn-action, .btn-back {
+    display: inline-block; /* Hiển thị dưới dạng khối nội tuyến */
+    padding: 12px 22px; /* Khoảng cách bên trong */
+    font-size: 1.1rem; /* Kích thước chữ */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Không có đường viền */
+    border-radius: 5px; /* Bo góc */
+    text-decoration: none; /* Bỏ gạch chân */
+    text-align: center; /* Canh giữa chữ */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển động */
+}
+
+.btn-create, .btn-submit {
+    background-color: #ff5733; /* Cam sáng */
+}
+
+.btn-create:hover, .btn-submit:hover {
+    background-color: #c70039; /* Đỏ rực khi hover */
+}
+
+.btn-action {
+    background-color: #33c9ff; /* Xanh dương sáng */
+}
+
+.btn-action:hover {
+    background-color: #1e90ff; /* Xanh dương đậm khi hover */
+}
+
+.btn-back {
+    background-color: #5c5c5c; /* Xám */
+    color: #fff; /* Màu chữ trắng */
+}
+
+.btn-back:hover {
+    background-color: #333; /* Xám đậm khi hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Đỏ */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Đỏ đậm khi hover */
+}
+
+/* Bảng dữ liệu */
+.table {
+    width: 100%; /* Chiều rộng 100% */
+    border-collapse: collapse; /* Hợp nhất đường viền */
+}
+
+.table th, .table td {
+    padding: 14px; /* Khoảng cách bên trong ô */
+    text-align: left; /* Canh trái chữ */
+    border-bottom: 1px solid #ddd; /* Đường viền dưới */
+}
+
+.table th {
+    background-color: #33c9ff; /* Xanh dương sáng cho tiêu đề cột */
+    color: #fff; /* Màu chữ trắng */
+}
+
+.table tr:nth-child(even) {
+    background-color: #eaf6ff; /* Xanh sáng cho hàng chẵn */
+}
+
+.table tr:hover {
+    background-color: #d0e8ff; /* Xanh nhạt hơn khi di chuột qua hàng */
+}
+
+/* Form và các trường */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form select {
+    width: calc(100% - 24px); /* Giảm chiều rộng để phù hợp với padding và border */
+    padding: 12px; /* Khoảng cách bên trong */
+    border: 2px solid #ff5733; /* Đường viền màu cam sáng */
+    border-radius: 5px; /* Bo góc */
+    margin-bottom: 12px; /* Khoảng cách dưới */
+    font-size: 1rem; /* Kích thước chữ */
+    box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến chiều rộng tổng thể */
+}
+
+.form input[type="number"] {
+    -moz-appearance: textfield; /* Loại bỏ mũi tên lên/xuống trên input number */
+}
+
+/* Loại bỏ mũi tên trên trình duyệt khác */
+.form input[type="number"]::-webkit-inner-spin-button,
+.form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Loại bỏ mũi tên */
+    margin: 0; /* Không có khoảng cách */
+}
+
+/* Các nút khác trong form */
+.form button {
+    background-color: #ff5733; /* Màu nền cam sáng */
+}
+
+.form button:hover {
+    background-color: #c70039; /* Màu nền đỏ rực khi hover */
+}
+
+/* Phân trang */
+.pagination {
+    display: flex; /* Hiển thị dạng flexbox */
+    justify-content: center; /* Canh giữa phần phân trang */
+    padding: 1rem; /* Khoảng cách quanh phần phân trang */
+}
+
+.pagination .page-item {
+    margin: 0 0.25rem; /* Khoảng cách giữa các nút */
+}
+
+.pagination .page-link {
+    padding: 0.5rem 1rem; /* Khoảng cách bên trong nút */
+    border: 1px solid #007bff; /* Đường viền của nút */
+    border-radius: 0.25rem; /* Bo góc cho nút */
+    color: #007bff; /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển động */
+}
+
+.pagination .page-link:hover {
+    background-color: #007bff; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+.pagination .active .page-link {
+    background-color: #007bff; /* Màu nền cho nút đang active */
+    color: #fff; /* Màu chữ cho nút đang active */
+    border: 1px solid #007bff; /* Đường viền cho nút đang active */
+}

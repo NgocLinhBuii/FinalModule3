@@ -1,0 +1,84 @@
+/* Tạo kiểu cho toàn bộ container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Chiếm toàn bộ chiều cao của viewport */
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradient màu nền */
+    color: #333; /* Màu chữ */
+    text-align: center;
+}
+
+/* Tạo kiểu cho tiêu đề */
+h1 {
+    font-size: 2.5rem; /* Kích thước chữ vừa phải */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a90e2; /* Màu xanh dương sáng */
+}
+
+/* Tạo kiểu cho form */
+.form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Giới hạn chiều rộng */
+}
+
+/* Tạo kiểu cho các trường nhập liệu */
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Tạo kiểu cho các ô nhập liệu */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form select {
+    width: calc(100% - 20px); /* Chiều rộng đầy đủ trừ padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Tạo kiểu cho nút submit */
+.btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745; /* Màu xanh lá cây */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #218838; /* Xanh lá cây đậm hơn khi di chuột */
+    transform: scale(1.05); /* Tăng kích thước khi di chuột */
+}
+
+/* Tạo kiểu cho nút quay lại */
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #007bff; /* Màu xanh dương */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #007bff; /* Xanh dương khi di chuột */
+    color: #fff;
+}

@@ -1,0 +1,138 @@
+/* Toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9; /* Nền xám sáng */
+}
+
+/* Container chính */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* Nền trắng cho container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Liên kết tiêu đề */
+.header-link {
+    display: block;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Form tìm kiếm */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff; /* Màu xanh dương */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #0056b3; /* Xanh dương đậm khi di chuột */
+}
+
+/* Nút thêm sinh viên mới */
+.btn-create {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745; /* Màu xanh lá cây */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-create:hover {
+    background-color: #218838; /* Xanh lá cây đậm khi di chuột */
+}
+
+/* Bảng dữ liệu */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff; /* Màu xanh dương cho tiêu đề cột */
+    color: #fff;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Màu nền cho hàng chẵn */
+}
+
+.table tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi di chuột qua hàng */
+}
+
+/* Nút hành động */
+.btn-action {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-action:hover {
+    transform: scale(1.05); /* Tăng kích thước khi di chuột */
+}
+
+/* Nút sửa */
+.btn-action {
+    background-color: #17a2b8; /* Màu cyan cho nút sửa */
+}
+
+.btn-action:hover {
+    background-color: #117a8b; /* Cyan đậm khi di chuột */
+}
+
+/* Nút xóa */
+.btn-delete {
+    background-color: #dc3545; /* Màu đỏ cho nút xóa */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Đỏ đậm khi di chuột */
+}
