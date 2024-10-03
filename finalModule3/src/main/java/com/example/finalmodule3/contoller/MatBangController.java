@@ -75,14 +75,13 @@ public class MatBangController extends HttpServlet {
     private void addMatBang(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String maMatBang = request.getParameter("maMatBang");
         String trangThai = request.getParameter("trangThai");
-        String dienTichStr = request.getParameter("dienTich"); // Đổi về String
+        String dienTichStr = request.getParameter("dienTich");
         String tangStr = request.getParameter("tang");
         String loaiMatBang = request.getParameter("loaiMatBang");
         String giaTienStr = request.getParameter("giaTien");
         String ngayBatDauStr = request.getParameter("ngayBatDau");
         String ngayKetThucStr = request.getParameter("ngayKetThuc");
 
-        // Kiểm tra xem các tham số có null không
         if (maMatBang == null || trangThai == null || dienTichStr == null || tangStr == null ||
                 loaiMatBang == null || giaTienStr == null || ngayBatDauStr == null || ngayKetThucStr == null) {
             request.setAttribute("error", "Vui lòng điền đầy đủ thông tin.");
@@ -90,17 +89,16 @@ public class MatBangController extends HttpServlet {
             return;
         }
 
-        // Chuyển đổi các tham số sang kiểu dữ liệu phù hợp
         float dienTich = Float.parseFloat(dienTichStr);
         int tang = Integer.parseInt(tangStr);
         float giaTien = Float.parseFloat(giaTienStr);
         LocalDate ngayBatDau = LocalDate.parse(ngayBatDauStr);
         LocalDate ngayKetThuc = LocalDate.parse(ngayKetThucStr);
 
-        // Tạo đối tượng MatBang
+
         MatBang matBang = new MatBang(maMatBang, trangThai, dienTich, tang, loaiMatBang, giaTien, ngayBatDau, ngayKetThuc);
 
-        // Kiểm tra mã mặt bằng đã tồn tại
+
         if (matBangService.existsByMaMatBang(matBang.getMaMatBang())) {
             request.setAttribute("error", "Mã mặt bằng vừa thêm đã tồn tại");
             request.getRequestDispatcher("matbang_add.jsp").forward(request, response);
@@ -119,7 +117,6 @@ public class MatBangController extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/matbang?action=list");
     }
 
-    // Phương thức tìm kiếm
     private void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String loaiMatBang = request.getParameter("loaiMatBang");
         Float giaTien = request.getParameter("giaTien") != null ? Float.parseFloat(request.getParameter("giaTien")) : null;
